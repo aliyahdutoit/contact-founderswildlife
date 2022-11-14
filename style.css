@@ -1,0 +1,90 @@
+* {
+    font-family: 'Courier New', Courier, monospace;  
+    background-color: #606c38;
+}
+
+#contactsub {
+    color: black;
+    font-size: 30px;
+    padding-left: 50px;
+}
+#getintouch {
+    font-weight: bold;
+    font-size: 70px;
+    padding-left: 10px;
+}
+
+#contactimage {
+    width: 300px;
+    height: 300px;
+}
+.card-container, .front, .back {
+	width: 300px;
+	height: 300px;
+}
+.card-container {
+    margin-left: 60px;
+}
+.back {
+	box-sizing: border-box;
+	padding: 0;
+	border-radius: 4px;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .25);
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#p {
+    font-size: 50px;
+}
+
+/* back side bg is orange gradient */ 
+.back {
+	background-image: linear-gradient(to right bottom, #606c38, #283618);
+}
+
+#button {
+    width: 140px;
+    height: 50px;
+}
+.card-container {
+	position: relative;
+}
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	overflow: hidden;
+	transition: transform .8s ease;
+}
+.back {
+	transform: rotateY(180deg);
+}
+.card-container:hover .front {
+	transform: rotateY(-180deg);
+}
+.card-container:hover .back {
+	transform: rotateY(0deg);
+}
+
+.card-container {
+	perspective: 75rem;
+}
+
+#info {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#icon {
+    padding-right: 10px;
+    padding: 6px;
+}
+
+#links {
+    text-decoration: none;
+    color: #fefae0;
+}
